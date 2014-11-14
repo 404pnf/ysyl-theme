@@ -1,6 +1,7 @@
-// http://www.jslint.com/lint.html#options
-/*jslint browser: true, nomen: true, debug: true, evil: false, vars: true, devel: true*/
-/*global _, $ */
+// jslint参考： http://www.jslint.com/lint.html#options .
+// nomen means Tolerate dangling _ in identifiers.
+/*jslint browser: true, nomen: true*/
+/*global _, $, console*/
 
 var YSYL = {};
 
@@ -11,11 +12,14 @@ YSYL.debug = true;
 
   // ----
   // ## 一些帮助函数
-  var note;
+  var note, redirectURL;
   note = function (msg) {
     if (YSYL.debug) {
       return typeof console !== 'undefined' && console !== null ? console.log(msg) : undefined;
     }
+  };
+  redirectURL = function (url) {
+    window.location.replace(url);
   };
 
   // ----
