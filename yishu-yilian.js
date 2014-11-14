@@ -1,47 +1,57 @@
-
+// http://www.jslint.com/lint.html#options
+/*jslint browser: true, nomen: true, debug: true, evil: false, vars: true, devel: true*/
+/*global _, $ */
 var YSYL = {};
 
 YSYL.debug = true;
 
 (function () {
+  'use strict';
 
-	var noote;
-  note = function(msg) {
+  var note;
+  note = function (msg) {
     if (YSYL.debug) {
-      return typeof console !== "undefined" && console !== null ? console.log(msg) : void 0;
+      return typeof console !== 'undefined' && console !== null ? console.log(msg) : undefined;
     }
   };
 
 
-  // 1. 获取用户选择的书籍
-  // 2. 获取这些书籍的div内容
-  // 3. 删除原始选择的书籍
-  // 4. 将书籍div内容插入到已选图书框中
-
-  // 但本图书div的结构
-  // 通过checkbox获取对象后需要往上走两步才能获得全书的div
-  // <li>
-  //     <div class="bookg_box">
-  //         <div class="bookg_img">
-  //         <input type="checkbox" class="bookg_input" />
-  //         <img src="none" />
-  //         </div>
-  //         <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
-  //         <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
-  //     </div>
-  // </li>
   YSYL.xuanshu = function () {
 
-    var addBooks;
+    var hideTaskAssign, showTaskAssign, addBooks, tianjiaBooks;
 
-    // 开始的时候，用户没有选择任何书。
-    // 隐藏con_box1区块，显示 no_book区块。
-    $('.task_assign1 .con_box1').addClass('displayn');
-    $('.task_assign1 .no_book').removeClass('displayn');
+    hideTaskAssign = function () {
+      // 开始的时候，用户没有选择任何书。
+      // 隐藏con_box1区块，显示 no_book区块。
+      $('.task_assign1 .con_box1').addClass('displayn');
+      $('.task_assign1 .no_book').removeClass('displayn');
+    };
+    hideTaskAssign();
 
 
-    $('#tianjia').submit()
+    showTaskAssign = function () {
+      $('.task_assign1 .con_box1').removeClass('displayn');
+      $('.task_assign1 .no_book').addClass('displayn');
+    };
 
+
+    // 1. 获取用户选择的书籍
+    // 2. 获取这些书籍的div内容
+    // 3. 删除原始选择的书籍
+    // 4. 将书籍div内容插入到已选图书框中
+
+    // 但本图书div的结构
+    // 通过checkbox获取对象后需要往上走两步才能获得全书的div
+    // <li>
+    //     <div class="bookg_box">
+    //         <div class="bookg_img">
+    //         <input type="checkbox" class="bookg_input" />
+    //         <img src="none" />
+    //         </div>
+    //         <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
+    //         <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
+    //     </div>
+    // </li>
     addBooks = function () {
       var checkedBoxes, htmlOfBooks;
 
@@ -59,8 +69,24 @@ YSYL.debug = true;
       _.each(checkedBoxes, function (e) {
         // $(e).parent().parent().remove();
       });
-    } // addBooks ends
 
-  } // xuanshu ends
 
-})();
+    }; // addBooks ends
+
+    tianjiaBooks = function () {
+      $('#tj').click(function () {
+        note('ha');
+        addBooks();
+        showTaskAssign();
+      });
+    };
+
+    tianjiaBooks();
+
+
+  }; // xuanshu ends
+
+
+
+
+}());
