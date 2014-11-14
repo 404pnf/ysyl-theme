@@ -46,22 +46,18 @@ YSYL.debug = true;
     // 4. 将书籍div内容插入到已选图书框中
     //
     // 注意： 通过checkbox获取对象后需要往上走两步才能获得全书的div。
-    //
+    // 通过checkbox获取对象后需要往上走三步才能获得全书的div的innerHTML，
+    // 而且获得的html不包括 li 标签，是它中间包含的内容。
     addBooks = function () {
       var checkedBoxes, htmlOfBooks;
 
       checkedBoxes = $('input:checked[type=checkbox]');
-      //note(checkedBoxes);
-
       htmlOfBooks = _.reduce(checkedBoxes, function (a, e) {
         var elementHTML, listElement;
-        // 通过checkbox获取对象后需要往上走三步才能获得全书的div的innerHTML，
-        // 而且获得的html不包括 li 标签，是它中间包含的内容。
         elementHTML = $(e).parent().parent().parent().html();
         listElement = '<li>' + elementHTML + '</li>';
         return a + listElement;
       }, '');
-      // note(htmlOfBooks);
 
       // 是否移除选定的元素？
       // _.each(checkedBoxes, function (e) {
