@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>阅读能力测试平台</title>
+    <link rel="stylesheet" type="text/css" href="fltrp_style.css">
+	<link rel="stylesheet" type="text/css" href="themes/metro/easyui.css">
+	<link rel="stylesheet" type="text/css" href="themes/icon.css">
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="underscore-min.js"></script>
+	<script type="text/javascript" src="yishu-yilian.js"></script>
+</head>
+<body class="easyui-layout ui_new">
+
+	<div data-options="region:'center'" style="background:#e9f0f8">
+    <!--内容-->
+    	<div class="con_box">
+        	<div class="task_1">
+            	<div class="task_tit">玉米班
+                    <span>一年级</span><span>人数：10</span>
+                    <span class="fright">邀请编码：zkdjfaklsdfj</span>
+                </div>
+                <div class="task_name">
+                	<span>布置任务</span>
+                    <span>第一步</span>
+                </div>
+                <div class="task_assign">
+                	<!--指定图书-->
+                	<div class="task_assign_tit">指定图书</div>
+                    <div class="con_box1">
+                    	<div class="specification_sheet">
+                        	<!--任务书单-->
+                        	<span class="specification_sheet_tit">任务书单<a href="#none" class="a_specification_sheet">从图书馆添加</a></span>
+                            <div class="no_book displayn">当前没有任何图书</div><!--没有图书-->
+                            <ul class="bookg_ul oh">
+                            	<!--book-->
+                                <li>
+                                    <div class="bookg_box">
+                                        <div class="bookg_img">
+                                        <input type="checkbox" class="bookg_input" id="test" />
+                                        <img src="none" />
+                                        </div>
+                                        <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
+                                        <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
+                                    </div>
+                                </li>
+                                <!--/book-->
+                                <!--book-->
+                                <li>
+                                    <div class="bookg_box">
+                                        <div class="bookg_img">
+                                        <input type="checkbox" class="bookg_input" />
+                                        <img src="none" />
+                                        </div>
+                                        <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
+                                        <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
+                                    </div>
+                                </li>
+                                <!--/book-->
+                                <!--book-->
+                                <li>
+                                    <div class="bookg_box">
+                                        <div class="bookg_img">
+                                        <input type="checkbox" class="bookg_input" />
+                                        <img src="none" />
+                                        </div>
+                                        <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
+                                        <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
+                                    </div>
+                                </li>
+                                <!--/book-->
+                            </ul>
+                            <!--/任务书单-->
+                            <div class="line_dashed"></div><!--虚线-->
+                            <!--推荐书单-->
+                            <span class="specification_sheet_tit">推荐书单</span>
+                            <ul class="bookg_ul oh">
+                            	<!--book-->
+                                <li>
+                                    <div class="bookg_box">
+                                        <div class="bookg_img">
+                                        <input type="checkbox" class="bookg_input" />
+                                        <img src="none" />
+                                        </div>
+                                        <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
+                                        <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
+                                    </div>
+                                </li>
+                                <!--/book-->
+                                <!--book-->
+                                <li>
+                                    <div class="bookg_box">
+                                        <div class="bookg_img">
+                                        <input type="checkbox" class="bookg_input" />
+                                        <img src="none" />
+                                        </div>
+                                        <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
+                                        <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
+                                    </div>
+                                </li>
+                                <!--/book-->
+                                <!--book-->
+                                <li>
+                                    <div class="bookg_box">
+                                        <div class="bookg_img">
+                                        <input type="checkbox" class="bookg_input" />
+                                        <img src="none" />
+                                        </div>
+                                        <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
+                                        <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
+                                    </div>
+                                </li>
+                                <!--/book-->
+                            </ul>
+                            <!--/推荐书单-->
+                            <a href="#none" id＝“tianjia” class="btn8">添 加</a>
+                        </div>
+                    </div>
+                    <!--/指定图书-->
+                </div>
+                <!--已选图书-->
+                <div class="task_assign1">
+                	<!--已选图书-->
+                	<div class="task_assign_tit">已选图书</div>
+                    <div class="no_book displayn">当前没有任何图书</div><!--没有图书-->
+                    <div class="con_box1">
+                    	<div class="specification_sheet">
+                            <ul class="bookg_ul oh">
+                                <!--book-->
+                                <li>
+                                    <div class="bookg_box">
+                                        <div class="bookg_img">
+                                        <input type="checkbox" class="bookg_input" />
+                                        <img src="none" />
+                                        </div>
+                                        <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
+                                        <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
+                                    </div>
+                                </li>
+                                <!--/book-->
+                                <!--book-->
+                                <li>
+                                    <div class="bookg_box">
+                                        <div class="bookg_img">
+                                        <input type="checkbox" class="bookg_input" />
+                                        <img src="none" />
+                                        </div>
+                                        <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
+                                        <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
+                                    </div>
+                                </li>
+                                <!--/book-->
+                                <!--book-->
+                                <li>
+                                    <div class="bookg_box">
+                                        <div class="bookg_img">
+                                        <input type="checkbox" class="bookg_input" />
+                                        <img src="none" />
+                                        </div>
+                                        <div class="bookg_tit">Sam's Pot</div><!--做...处理-->
+                                        <div class="bookg_tit_c"><span>5级</span><span>500词</span></div>
+                                    </div>
+                                </li>
+                                <!--/book-->
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/已选图书-->
+                </div>
+                <!--/已选图书-->
+                <!--达标要求-->
+                <div class="mc_request">
+                	<div class="mc_request_box"><span>达标要求：</span><input type="text" class="mc_request_input"/>　本</div>
+                	<div class="mc_request_box"><a href="#none" class="btn8">下一步</a><a href="#none" class="btn8">取消</a></div>
+                </div>
+                <!--达标要求-->
+            </div>
+        </div>
+    <!--/内容-->
+    </div>
+    <script>
+      $(document).ready(function () {
+        YSYL.xuanshu();
+      });
+    </script>
+</body>
+</html>

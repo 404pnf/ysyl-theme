@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; font-family:"微软雅黑","幼圆",Arial, Helvetica; font-size:14px;}
+.clear{ clear:both}
+.fright{ float:right}
+.fleft{ float:left}
+.oh{ overflow:hidden}
+a{ text-decoration:none; cursor:pointer;}
+.displayn{ display:none;}
+/*1s1l-头*/
+.sys_top{ background-color:#ffffff; height:41px;}
+.sys_top_{ background-color:#9f0a0e!important; height:42px!important;}
+.sys_top_1 a{ font-family:'微软雅黑'; font-size:16px; color:#434343; text-decoration:none; margin-right:10px; padding-left:35px;display:inline-block; color:#FFF; height:33px; line-height:33px; padding-top:3px;}
+.sys_top a:hover{}
+.sys_top a.top_user{  background:url(images/jiaoshi_05.png) no-repeat 0 3px;}
+.sys_top a.top_help{ background:url(images/jiaoshi_36.png) no-repeat;}
+.sys_top a.top_quit{ background:url(images/jiaoshi_06.png) no-repeat 0 3px;}
+
+.sys_top_1{ height:40px; width:100%; background:#005b9f; overflow:hidden}
+.sys_top_1 .logo{ background:url(images/small_logo.png) 0 center no-repeat; width:180px; height:40px; margin-left:30px;}
+.sys_top_1 .app_btn_box{ margin-left:90px;}
+.sys_top_1 .app_btn{ color:#ffffff; background:url(images/jiaoshi_08.png) no-repeat 0 3px; padding-left:35px; height:40px; line-height:40px;}
+.sys_top_1 .app_btn:hover{background:url(images/jiaoshi_08-1.png) no-repeat #dae3ed  0 3px; padding-left:35px; color:#0f64a4; height:40px; line-height:40px;}
+.sys_top_1 a.l-btn span span.l-btn-text {display: inline-block;vertical-align: baseline;width: auto; font-size: 14px;}
+/*/1s1l-头*/
+/*1s1l-nav*/
+.ysyl_nav_box{ height:40px; border-top:1px solid #FFF; background:#4f5a62;}
+.ysyl_nav_box a{ color:#FFF; font-family: '微软雅黑'; font-size: 16px; height:40px; line-height:40px;display:inline-block;float: left;}
+.ysyl_nav{ text-align:center; width:135px; border-left:1px solid #5c666f; border-right:1px solid #353a3e;}
+.ysyl_nav_s{ background:#9a0000}
+.ysyl_nav_box .ysyl_logo{ background:url(images/jiaoshi_35.png) no-repeat 0 3px; padding-left:40px; margin:0 46px;}
+/*/1s1l-nav*/
+/*bottom*/
+.region_bottom{ text-align:center;}
+/*left*/
+.left_nav{ margin-top:10px;}
+.left_nav a{ display:block; font-family:"微软雅黑"; font-size:15px; color:#333333; height:48px; line-height:48px; text-decoration:none; padding-left:29px;}
+.left_nav a.left_navs{ background:#ffffff; border-left:4px solid #4887b7; padding-left:26px; color:#a93636}
+/*content*/
+.padding_01{ padding:30px 25px}
+/*弹出框*/
+.yy_pop_box{ width:140px; margin:30px auto;}
+.yy_pop_line{ height:30px; line-height:30px; font-size:15px; color:#666666;}
+.panel-title{}
+/*/弹出框*/
+/*无侧栏内容*/
+.con_box{ width:70%; margin:0 auto;overflow: hidden;}
+/*有侧栏内容*/
+.con_box1{ width:95%; margin:0 auto;overflow: hidden;}
+/*图书搜索*/
+.con_box2{ width:89%; margin:0 auto;overflow: hidden;}
+/*布置任务*/
+.con_box3{ width:75%; margin:0 auto;overflow: hidden;}
+/*1s1l_btn*/
+.btn{ width:137px; height:32px; line-height:32px; text-align:center; color:#FFF; display:block; background:#005c9f; font-size:15px;}
+.btn_marginr{ margin-right:30px;}
+.btn_margint{ margin-top:30px;}
+.add_class{ margin:55px 0 43px 0;}
+.add_class1{ margin:55px 0 25px 0;}
+.add_class2{ margin-bottom:25px }
+.btn1{ padding:0 33px; height:27px; line-height:27px; text-align:center; color:#FFF; display:inline-block; background:#1176c4; font-size:14px; margin-left:25px;}
+input[type="checkbox"]{ margin-right:10px}
+.btn3{ width:110px; background:#4696d0; height:32px; line-height:32px; text-align:center; color:#ffffff; display:inline-block; margin-right:30px;}
+.btn4{ width:87px!important; margin-left:30px;}
+.a_download{ color:#005c9f;line-height: 45px;font-size: 16px;text-decoration: underline;margin-left: 30px;}
+.btn5{ background:#4696d0 url(images/jiaoshi_32.png) no-repeat 10px 5px; color:#ffffff; padding-left:27px; width:53px; height:26px; display:inline-block; line-height:26px; text-align:left}
+.btn5_1{ background:#4696d0 url(images/jiaoshi_32_1.png) no-repeat 60px 5px; color:#ffffff; padding-right:23px; width:45px; height:26px; display:inline-block; line-height:26px; padding-left:12px; text-align:right;}
+.btn6{ background:url(images/laba-1.png)no-repeat center; width:25px; height:32px; line-height:32px; display:inline-block;}
+.btn7{ background:#005c9f; color:#fff; width:73px; height:33px; text-align:center; display:inline-block; line-height:33px;}
+.btn8{ width:110px; text-align:center; height:32px; line-height:32px; color:#ffffff; background:#005c9f; margin:0 auto 20px auto; display:block}
+.btn_t{ color:#ffffff; height:32px; line-height:32px; padding:0 25px; background:#005c9f; display:inline-block;}
+.btn_t_marginl{ margin-left:28px;}
+/*/1s1l_btn*/
+
+/*1s1l抽屉*/
+.col {	clear: both; border:1px solid #c7c7c7;border-top:none;}
+.sliderbox { width: 100%; margin: 0 auto; overflow:hidden;}
+.sliderbox dt {	height:40px; cursor:pointer; background: #d1ddeb url(images/jiaoshi_39.png) right no-repeat;border-top:1px solid #c7c7c7;}
+.sliderbox .open { 	font-size: 15px; background: #d1ddeb url(images/jiaoshi_39-1.png) no-repeat right;color: #2f3032; cursor: default;border-top:1px solid #c7c7c7;}
+.sliderbox .title {	font-size: 16px; color: #303231; padding: 0 0 0 17px; line-height: 40px;display: inline-block;width: 100%;height: 40px;}
+.sliderbox .title span{ color:#6c6c6c; font-size:15px; margin-left:18px;}	
+.sliderbox dt:hover span { color:#31302e;}	
+.sliderbox .open:hover span { color:#606060;}	
+.sliderbox dd {	font-size: 15px; color: #615f60; height: 200px; 	padding: 0; margin: 0; 	background: #f3f5f4; position:relative;	overflow:hidden; }
+
+/*/1s1l抽屉*/
+
+.con_box .tit1{ font-size:16px; color:#343331}
+.con_box .tit1_w{ width:100%;}
+.con_box .tit1 span{ margin-left:20px; font-size:16px; color:#343331}
+
+
+
+/*翻页按钮*/
+.test_btn_box{ margin-top:30px;}
+.test_btn_box a{ padding:5px 15px; margin-right:35px; color:#ffffff; text-decoration:none; }
+.test_btn_box a.prev{ background:#6688a1;}
+.test_btn_box a.next,.test_btn_box a.submission{ background:#337bb1; margin-right:60px;}
+.margin_bottom_page{ padding-bottom: 60px;}
+
+/*login*/
+.wapper_login{  background:#ffffff url(images/login_bg.png) center 225px  no-repeat;height:479px; width:100%; padding-top:134px;}
+.login_width{ width:804px; margin-right:auto!important; margin-left:auto!important;}
+.login_logo{ background:url(images/logo_login.png) no-repeat; margin:0px 0 22px 0; height:70px; padding-left:230px; width:230px!important; }
+.big_tit{ color:#006699; font-family:"微软雅黑","幼圆"; font-size:26px; padding-right:10px; line-height:70px;}
+.login_main{ overflow:hidden}
+.login_form_box{ width:304px; height:337px; background:url(images/login_form_bg.png) no-repeat}
+.form_width{ width:250px; margin:18px auto 0 auto;}
+.login_form_box div{ margin-bottom:20px;}
+.login_error{ border:1px solid #ef8b8b; background:#ffebec url(images/icon1.png) 8px 8px no-repeat; padding:8px 8px 8px 32px; font-size:13px; color:#ec1a1a;}
+.login_user,.login_pw{ border:1px solid #006699; font-size:13px;}
+.login_user input,.login_pw input{ border:none 0; height:33px; width:248px; line-height:33px;}
+.CAPTCHA_input{ width:90px; border:1px solid #006699; height:33px; line-height:33px; margin-right:8px;}
+.login_a{ font-size:15px; color:#006699; text-decoration:underline; display:inline-block; height:33px; line-height:33px; margin-left:10px;}
+.login_imag{ margin-right:4px;}
+.login_btn{ background:#006699!important; width:124px; height:36px!important; color:#FFF; display:inline-block; text-decoration:none; line-height:36px; text-align:center; font-size:14px; font-family:"微软雅黑"; margin-right:5px;}
+.login_footer{ font-size:14px; text-align:center; line-height:20px; color:#7d7d7d; margin-top:40px;}
+.forget_tip{ display:none; width:150px; background:#FFFEE6; border:1px solid #999; position:absolute; top:-60px;left: -100px; padding:5px; line-height:150%}
+.forget_pw{ margin-left:15px; font-size:14px; color:#666666; text-decoration:none;}
+a.forget_pw:hover .forget_tip{ display:block}
+
+
+/*----------table-------------*/
+/*教师管理*/
+.table1{ width:100%; border-collapse:collapse;}
+.table1 th{ height:40px; line-height:40%; border:1px solid #c5c7c6; background:#d1ddeb; text-align:center; font-size:16px; color:#646061; font-family:"微软雅黑";}
+.table1 th.th_white{ height:40px; line-height:40%; border:1px solid #c5c7c6; background:#f3f5f4; text-align:center; font-size:16px; color:#646061; font-family:"微软雅黑";}
+.table1 td{ height:40px; line-height:40%; border:1px solid #c5c7c6; font-size:14px; vertical-align:middle; color:#615f60; text-align:center;}
+.table1 tr.odd{ background:#f3f5f4;}
+.table1 tr.even{ background:#e7eaef;}
+.table1 td a{ font-size:14px;}
+.table1 .op{ width:270px;}
+.table1 .No{ width:80px;}
+a.blink{ color:#005ba0; text-decoration:underline;margin-right:20px; }
+a.rlink{ color:#990100; text-decoration:underline;margin-right:20px; }
+a.glink{ color:#626060; text-decoration:underline;}
+
+/*教师管理-班级管理*/
+.table_op{ margin-bottom:14px;}
+/*系统管理-学校管理*/
+.table_op_box span{ font-size:14px; color:#373737; line-height:30px;}
+.table_op_box select{ border:1px solid #4696d0; height:30px; line-height:30px; color:#a7a7a8; background:#e9f0f7; width:186px; margin:0 19px;}
+.table_op_box select.width1{ width:107px;}
+.table_op_box input[type="text"]{ border:1px solid #4696d0; height:30px; color:#a7a7a8; background:#e9f0f7; width:190px; margin:0 19px; padding:0 5px}
+/*分页*/
+.pagination-info{ display:none;}
+.pagination-links .l-btn-plain{ background:#a5a5a5!important; margin-left:3px;}
+.pagination-links .l-btn-plain-selected{ background:#36b5ec!important;}
+.page_1{ width:100%; position:relative; margin-top:60px;}
+.page_2{ position:relative; left:50%; display:inline-block;}
+.page_3{ position:relative;right: 50%; display:inline-block;}
+
+.table2{ margin-top:50px;}
+/*layout_left*/
+.layout_left{ background:#a5a5a5!important;}
+.logo2{ width:81px; height:82px; background:url(images/logo2.png) no-repeat; margin:14px auto;}
+.tit2{ color:#ffffff; font-size:20px; text-align:center; margin-bottom:13px;}
+.left_nav_s{ height:40px; line-height:40px; font-size:13px; color:#FFF; background:#4696d0; text-align:center; display:block; }
+.layout_left .accordion .accordion-header-selected {background: #4696d1!important;}
+.layout_left .accordion .accordion-header { background: #a5a5a5 ;filter: none; height:40px!important; line-height:40px; border:1px solid #8f9190;}
+.layout_left .panel-body{ background:#bababa;}
+.layout_left .panel-header, .panel-body { border-color: #8f9190;}
+.layout_left .accordion {background: #a5a5a5;border:none;}
+.layout_left .panel-title {font-size: 14px; color: #ffffff; height: 40px; line-height: 40px; text-align:center}
+.layout_left .accordion-collapse {background: url(images/jiaoshi_15.png) no-repeat;}
+.layout_left .accordion-expand {background: url(images/jiaoshi_15_1.png) no-repeat;}
+.left_nav_z{ font-size:14px; color:#FFF; display:block; height:40px; line-height:40px; text-align:center;}
+
+/*form*/
+.form_one{ margin:55px 0 0 110px;}
+.form_one_pop{ margin:0 auto; width:600px;}
+.form_one div,.form_one_pop div{ margin-top:25px;}
+.form_one label,.form_one_pop label{ font-size:14px; width:150px; display:inline-block; text-align:right; margin-right:10px; float: left; height:40px;}
+.form_tit{ font-size:18px; color:#373737; font-weight:bold; padding-left:250px}
+.width_5{ width:290px; border:1px solid #4697cf; padding:5px; background:#e9f0f8;}
+.width_5_1{ width:277px; border:1px solid #4697cf; padding:5px; background:#e9f0f8;}
+.form_div span{ margin-left:10px;}
+.red{ color:#c73326; font-weight:bold; margin:5px; font-size:12px; font-family:Arial, Helvetica;}
+.textarea{ width:65%; height:150px; border:1px solid #4697cf; background:#e9f0f8;}
+.textarea1{ width:500px; height:75px; border:1px solid #4697cf; background:#e9f0f8;}
+.from_tip{ display:block; margin-left:160px; color:#636768; line-height:40px;}
+
+/*图书详情*/
+.book_tit{ font-family:Arial, Helvetica, sans-serif; font-size:13px; text-align:center; margin-top:30px; line-height:30px; font-weight:bold;}
+.book_tit1{ font-size:16px; font-weight:bold; line-height:30px;}
+.book_tit2{  font-size:16px; line-height:30px;}
+.book_tit_c{ font-size:15px; text-align:center; line-height:30px; font-weight:bold;}
+.book_details{ list-style:none;}
+.book_details li{ line-height:30px; margin-left:30px;}
+.book_cover{ border:1px solid #005b9e; position:relative; height:350px;}
+.book_cover_tip{ position:absolute; bottom:0; right:0; width:46px; height:21px; background:url(images/banxiao.png) no-repeat;}
+.book_intro{ line-height:170%;}
+.star{ background:url(images/star.jpg) no-repeat; display:inline-block; width:15px; height:14px; margin-right:2px;}
+.book_intro img{ margin-top:45px;}
+
+/*试题*/
+.que_box{ width:760px; margin:0 auto;}
+.que_no{ width:120px; text-align:center; display:inline-block;}
+.img_que{ margin:30px auto 20px auto}
+.dui,.dui_s,.cuo,.cuo_s{  width:114px; height:114px; display:inline-block; margin-top:45px; margin-bottom:100px;}
+.dui{ background:url(images/dui.png) no-repeat; margin-left:208px;}
+.dui_s{ background:url(images/dui_s.png) no-repeat; margin-left:208px;}
+.cuo{ background:url(images/cuo.png) no-repeat; margin-left:100px}
+.cuo_s{ background:url(images/cuo_s.png) no-repeat; margin-left:100px}
+
+.dan_x_ul{ margin-bottom:130px;}
+.dan_x_ul li{ list-style:none;}
+.dan_x_ul li a{ width:100%; height:45px; line-height:45px; background:#d2d2d2; display:block; margin-top:20px; color:#323232; padding-left:30px;}
+.dan_x_ul li a.dan_x_s{ background:#4696d1 url(images/true.png) right no-repeat;}
+
+
+/* 图书馆*/
+.bookg_search{ width:780px; margin:30px auto 14px auto;}
+.bookg_search span{ font-size:13px; color:#606060; margin-right:15px;}
+.bookg_search_input{ width:355px; height:30px; line-height:30px; border:1px solid #005b9e; background:#e9f0f8; font-size:13px; color:#a3a2a0;}
+
+.bookg_ul li{ float:left; margin:0 25px 0 25px; padding-bottom:27px; list-style:none;}
+.bookg_box{ border:1px solid #005c9f; width:158px; height:216px;}
+.bookg_img{ width:150px; height:150px; position:relative; border:1px solid #999999; margin:4px auto;}
+.bookg_box .bookg_img img{ width:150px; height:150px; border:none;}
+.bookg_box .bookg_img .bookg_input{ position:absolute; left:0; top:0; background:#fff; border:1px solid #333;}
+.bookg_box .bookg_img .bookg_tip{ width:46px; height:21px; background:url(images/banxiao.png); display:inline-block; position:absolute; bottom:0; right:0;}
+.bookg_condition div{ border-bottom:1px solid #005ba1; font-size:13px; color:#606060; margin-bottom:4px; height:32px; line-height:32px; margin:0 25px; font-weight:bold;}
+.bookg_condition div a{ color:#61605e; font-size:13px; margin-left:22px; font-weight:normal;}
+.bookg_op div{margin:25px;}
+.bookg_tit,.bookg_tit_c{ text-align:center; font-size:13px; line-height:170%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.bookg_tit_c span{ margin:0 7px;}
+
+/*分页*/
+#pagecount{ text-align:center;}
+#pagecount .first{background:#4696d0 url(images/jiaoshi_32.png) no-repeat 10px 5px; color:#ffffff; padding-left:27px; width:40px; height:26px; display:inline-block; line-height:26px; text-align:left}
+#pagecount .last{background:#4696d0 url(images/jiaoshi_32_1.png) no-repeat 50px 5px; color:#ffffff;  width:40px; height:26px; display:inline-block; line-height:26px; text-align:right; padding-right:26px;}
+#pagecount .last a,#pagecount .first a{ color:#ffffff; }
+#pagecount .page_btn{ background:#4696d1; padding:0 13px; height:26px; line-height:26px; color:#ffffff; display:inline-block;}
+#pagecount .page_btn_y,#pagecount .page_btn_y_s{background:#a5a5a5; padding:0 10px; height:26px; line-height:26px; color:#ffffff; display:inline-block;}
+#pagecount .page_btn_y_s{ background:#36b5ec!important;}
+#pagecount .page_btn a{ color:#ffffff;}
+
+/*布置任务*/
+.task_1{ overflow:hidden; border:1px solid #c7c7c7; margin:90px 0 85px 0; background:#f3f5f4;}
+.task_1 .task_tit{ height:40px; line-height:40px; background:#d1ddeb; color:#343434; padding:0 20px;}
+.task_1 .task_tit span{ color:#626061; margin-left:20px;}
+.task_name{ text-align:center; padding:20px 0 10px 0; border-bottom:1px solid #c6c8c7;}
+.task_name span{ display:block; font-size:16px; line-height:180%;}
+.task_assign_tit{ margin:20px 0 0 20px;}/*指定图书*/
+.task_assign_tit2{ margin:35px 0 0 55px;}/*不指定图书*/
+.specification_sheet_tit{ margin:12px 0 15px 25px; display:block}
+.line_dashed1{ background:url(images/line_dashed.jpg) bottom repeat-x; display:block; margin-left:50px; width:90%; height:1px;}
+.line_dashed{ background:url(images/line_dashed.jpg) bottom repeat-x; display:block; margin-left:25px; width:95%; height:1px;}
+.a_specification_sheet{ margin-left:13px; font-size:13px; color:#005aa0; text-decoration:underline;}
+.task_assign1{ background:#e7eef6; border-top:1px solid #c7c7c7; border-bottom:1px solid #c7c7c7;}
+.task_assign1 .task_assign_tit{ margin-bottom:25px;}
+.mc_request{ text-align:center}
+.mc_request .btn8,.mc_request_box .btn8{ float:left; margin:0 18px;}
+.mc_request_box{ width:300px; margin:40px auto; overflow:hidden; clear:both;}
+.mc_request_input{width: 125px;border: 1px solid #4697cf;padding: 5px;background: #e9f0f8;}
+.no_book{ height:180px; text-align:center; padding-top:50px;}
+.range_ul{ margin-bottom:100px;}
+.range_ul li{ list-style:none; padding:5px 0;}
+.range_ul li input{ margin-right:10px;}
+/*不指定图书*/
+.bbook_level_ul{ margin-left:60px; width:85%;}
+.bbook_level_ul li{ float:left; list-style:none; margin:15px;}
+/*布置任务2*/
+.task_assign_padding{ padding-top:40px;}
+/*教师-我的班级*/
+.mc_notice{ font-size:16px; color:#333331; margin:45px 0 20px 0; font-weight:bold}
+.mc_notice span{ color:#615f60; font-weight:normal;}
+.mc_notice_btn{ margin:15px 30px 0 18px;}
+.mc_notice_btn a{ margin-right:15px;}
+.mc_notice_btn .l-btn-plain{ background:#005b9f; height:32px; line-height:32px; width:100px;}
+.mc_notice_btn .l-btn-plain:hover{ background:#005b9f; color:#ffffff;}
+.mc_notice_btn .m-btn-plain-active{ color:#ffffff;}
+.mc_notice_btn .l-btn-text{ line-height:32px;}
+.mc_notice_down{ display:block; height:26px; line-height:26px; background:#4696d0; border:1px solid #005b9f; border-top:none; width:100px; font-size:13px; color:#ffffff; text-align:center;}
+.menu{ padding:0!important; background:none!important; border:0 none!important;}
+.sliderbox dd.dd5 {	font-size: 15px; color: #615f60; height: 540px; 	padding: 0; margin: 0; 	background: #f3f5f4; position:relative;	overflow:hidden; }
+.mc_img{ width:150px; height:150px; border:1px solid #999999;}
+.specification_sheet_tit span{ margin-left:20px;}
+.mc_ul li{ line-height:170%; color:#606060; font-size:12px; float:none; margin:0px; padding:5px 0;}
+.mc_ul li a{ color:#006797; text-decoration:underline;}
