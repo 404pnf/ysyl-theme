@@ -29,19 +29,16 @@ YSYL.debug = true;
     };
     hideTaskAssign();
 
-
     showTaskAssign = function () {
       $('.task_assign1 .con_box1').removeClass('displayn');
       $('.task_assign1 .no_book').addClass('displayn');
     };
 
-
     // 1. 获取用户选择的书籍
     // 2. 获取这些书籍的div内容
     // 3. 删除原始选择的书籍
     // 4. 将书籍div内容插入到已选图书框中
-
-    // 但本图书div的结构
+    // 每本图书div的结构
     // 通过checkbox获取对象后需要往上走两步才能获得全书的div
     // <li>
     //     <div class="bookg_box">
