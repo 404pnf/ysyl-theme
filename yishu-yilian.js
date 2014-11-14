@@ -1,6 +1,7 @@
 // http://www.jslint.com/lint.html#options
 /*jslint browser: true, nomen: true, debug: true, evil: false, vars: true, devel: true*/
 /*global _, $ */
+
 var YSYL = {};
 
 YSYL.debug = true;
@@ -64,29 +65,29 @@ YSYL.debug = true;
         listElement = '<li>' + elementHTML + '<li>';
         return a + listElement;
       }, '');
-      note(htmlOfBooks);
+      // note(htmlOfBooks);
 
-      _.each(checkedBoxes, function (e) {
-        // $(e).parent().parent().remove();
-      });
+      // _.each(checkedBoxes, function (e) {
+      //   $(e).parent().parent().remove();
+      // });
 
+      // 插入html位置
+      // <div class="con_box1">
+      //   <div class="specification_sheet">
+      //         <ul class="bookg_ul oh" id="assign_books">
+      $('#assign_books').html(htmlOfBooks);
 
     }; // addBooks ends
 
     tianjiaBooks = function () {
       $('#tj').click(function () {
-        note('ha');
         addBooks();
         showTaskAssign();
       });
     };
 
-    tianjiaBooks();
-
-
+    return tianjiaBooks();
   }; // xuanshu ends
-
-
 
 
 }());
