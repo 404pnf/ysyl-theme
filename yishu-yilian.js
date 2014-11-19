@@ -63,11 +63,6 @@ YSYL.debug = true;
         return a + listElement;
       }, '');
 
-      // 是否移除选定的元素？
-      // _.each(checkedBoxes, function (e) {
-      //   $(e).parent().parent().remove();
-      // });
-
       $('#assign_books').html(htmlOfBooks);
 
     }; // addBooks ends
@@ -84,6 +79,6 @@ YSYL.debug = true;
     // ----
     // ### YSYL.xuanshu 这个函数的返回值
     return tianjiaBooks();
-  }; // xuanshu ends
+  }; // YSYL.xuanshu ends
 
 }());
