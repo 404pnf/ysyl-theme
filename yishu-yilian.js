@@ -15,7 +15,7 @@ YSYL.debug = true;
   var note, redirectURL;
   note = function (msg) {
     if (YSYL.debug) {
-      return typeof console !== 'undefined' && console !== null ? console.log(msg) : undefined;
+      return console === undefined && console !== null ? console.log(msg) : undefined;
     }
   };
   redirectURL = function (url) {
@@ -85,6 +85,5 @@ YSYL.debug = true;
     // ### YSYL.xuanshu 这个函数的返回值
     return tianjiaBooks();
   }; // xuanshu ends
-
 
 }());
