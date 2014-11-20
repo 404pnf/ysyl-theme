@@ -77,9 +77,10 @@ YSYL.debug = true;
     // ----
     // ### 监听提交按钮，并调用相应函数
     tianjiaBooks = function () {
-      $('#tj').click(function () {
+      $('#tj').click(function (e) {
         addBooks();
         showTaskAssign();
+        e.preventDefault();
       });
     };
 
