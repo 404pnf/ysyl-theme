@@ -52,10 +52,18 @@ YSYL.debug = true;
     // 注意： 通过checkbox获取对象后需要往上走两步才能获得全书的div。
     // 通过checkbox获取对象后需要往上走三步才能获得全书的div的innerHTML，
     // 而且获得的html不包括 li 标签，是它中间包含的内容。
+    //
+    // 现在添加到已选图书中的图书也是带着checkbox的，且其checkbox也绑定了添加
+    // 这个事件。就是说，如果我选中已选图书中的某本书然后点添加键，会清楚所有
+    // 已经添加图书并添加刚才勾选的那本。
+    // 这应该不是我们要的效果，应该在选择checkbox时限制只在“指定图书”区域的。
+    //
+    // TODO: 建议把 .task_assign .task_assign1 这两个在页面上只出现一次的类
+    // 改为id。
     addBooks = function () {
       var checkedBoxes, htmlOfBooks;
 
-      checkedBoxes = $('input:checked[type=checkbox]');
+      checkedBoxes = $('.task_assign input:checked[type=checkbox]');
       htmlOfBooks = _.reduce(checkedBoxes, function (a, e) {
         var elementHTML, listElement;
         elementHTML = $(e).parent().parent().parent().html();
